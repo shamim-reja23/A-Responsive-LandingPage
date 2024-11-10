@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalkNotes</title>
+    <link rel="stylesheet" href="LandingPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="audio-waves.png">
+                <h1>TalkNotes</h1>
+            </div>  
+            <nav class="nav-menu">
+                <ul>
+                    <li><a>Try it</a></li>
+                    <li><a>How it works</a></li>
+                    <li><a>Use cases</a></li>
+                    <li><a>Pricing</a></li>
+                    <li><a>FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="btn-container">
+                <button class="login-btn">Login</button>
+                <button class="get-talknotes-plus-btn"><i class="fa-solid fa-arrow-right"></i> Get Talknotes +</button>
+            </div>
+        </div>
+    </header>
+    <section class="main-section">
+        <div class="main-container">
+            <div class="heading">
+                <div class="product-of-the-day-container">
+                    <img src="ph-award.svg">
+                </div>
+                <h2>Turn messy thoughts into <br><span class="highlight">actionable</span> notes.</h2>
+                <h3>The #1 AI. voice note app</h3>
+                <p>Turn hours of note taking into minutes. Just record a voice note,<br> and let the AI transcribe, clean up and structure it for you.</p>
+                <p><strong>Available on Web, iOS and Android.</strong></p>
+                <button class="get-talknotes-btn"><i class="fa-solid fa-arrow-right"></i> Get Talknotes</button>
+                <p class="users-rating">Trusted by 10,000+ happy users <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+            </div>
+            <div class="demo-recording">
+                <div class="waveform"><hr class="styled-hr"></div>
+                <p class="limit">Limit: 01:00</p>
+                <p class="timer"><strong>00:00</strong></p>
+                <div class="img-container">
+                    <div class="play-img">
+                        <img src="play-button.png">
+                    </div>
+                    <div class="recording-image">
+                        <img src="voice.png" alt="Recording Image">
+                    </div>
+                    <div class="bin-img">
+                        <img src="bin.png">
+                    </div>
+                </div>
+                <button class="continue-btn"><i class="fa-solid fa-arrow-right"></i> Continue</button>
+                <p class="demo-text"><i class="fa-solid fa-arrow-up"></i> Click the <i class="fa-solid fa-microphone"></i> to start the demo</p>
+            </div>
+        </div>
+        <div class="arrow-down">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>    
+    </section>
+    <section class="how-it-works-section">
+        <h3 class="how-it-works-h3">How it works</h3>
+        <h2 class="how-it-works-heading">Turn thoughts into notes with just 4 steps</h2>
+        <div class="how-it-works-container">
+            <div class="how-it-works">
+                <div class="step">
+                    <div class="step-heading">
+                        <span class="step-title" onclick="toggleStep(1)">1. Record Your Voice</span>
+                        <span class="plus-icon" onclick="toggleStep(1)">+</span>
+                    </div>
+                    <div class="step-text" id="step-1-text">Speak your thoughts & ideas. Don't stress about format, grammar, pauses or mistakes, just talk naturally, we handle the rest.</div>
+                </div>
+                <div class="step">
+                    <div class="step-heading">
+                        <span class="step-title" onclick="toggleStep(2)">2. Choose a style</span>
+                        <span class="plus-icon" onclick="toggleStep(2)">+</span>
+                    </div>
+                    <div class="step-text" id="step-2-text">TalkNotes will transcribe your voice into any kind of content. Transcript, Task list, journal entry, Blog post... Your creativity is the only limit!</div>
+                </div>
+                <div class="step">
+                    <div class="step-heading">
+                        <span class="step-title" onclick="toggleStep(3)">3. Edit & organize</span>
+                        <span class="plus-icon" onclick="toggleStep(3)">+</span>
+                    </div>
+                    <div class="step-text" id="step-3-text">Tweak your content to your liking with the markdown editor. Create folders, add tags, change the style or edit the transcript</div>
+                </div>
+                <div class="step">
+                    <div class="step-heading">
+                        <span class="step-title" onclick="toggleStep(4)">4. Export & Publish</span>
+                        <span class="plus-icon" onclick="toggleStep(4)">+</span>
+                    </div>
+                    <div class="step-text" id="step-4-text">Export your note to your favorite apps with Zapier, or download it in PDF or Markdown! Want to share it quickly? No problem, make it public and copy the link!</div>
+                </div>
+                <button class="get-talknotes-btn1"><i class="fa-solid fa-arrow-right"></i> Get Talknotes</button>
+            </div>
+            <div class="video-container">
+                <video src="step-1.mp4" autoplay muted loop></video>
+            </div>
+        </div>
+        <div class="feedback-container">
+            <p class="feedback-text">“So simple, yet effective. I use Talknotes to write most of our blog posts. I would highly recommend to those looking to up their content game.”</p>
+            <p class="feedback-author">- Elwyn Davies, from Pixelhaze Studio</p>
+        </div>
+    </section>
+    <section class="use-cases">
+        <h3 class="how-it-works-h3">Use cases</h3>
+        <h2 class="how-it-works-heading">Here is how Talknotes can help you</h2>
+        <div class="card-container">
+            <div class="card">
+                <h5><i class="fa-solid fa-lightbulb"></i> Effortless Brainstorming</h5>
+                <p class="card-text">Never forget an idea again! Capture your best thoughts while they're fresh, and let our app do the writing for you.</p>
+            </div>
+            <div class="card">
+                <h5><i class="fa-solid fa-pen"></i> Easy Content Creation</h5>
+                <p class="card-text">Say goodbye to writer's block! With TalkNotes, you can dictate your thoughts and watch them transform into engaging content in seconds.</p>
+            </div>
+            <div class="card">
+                <h5><i class="fa-solid fa-microphone"></i> Voice Journaling</h5>
+                <p class="card-text">Discover a new way to journal! Express your thoughts, feelings, and memories effortlessly just by recording yourself rambling.</p>
+            </div>
+            <div class="card">
+                <h5><i class="fa-solid fa-pen"></i> Interview Transcription</h5>
+                <p class="card-text">Conduct interviews like a pro! TalkNotes provides instant, accurate transcriptions so you can focus on the conversation.</p>
+            </div>
+            <div class="card">
+                <h5><i class="fa-solid fa-message"></i></i> Meetings Reimagined</h5>
+                <p class="card-text">Transform your meetings with TalkNotes! Record, transcribe, and never miss a crucial detail again.</p>
+            </div>
+            <div class="card">
+                <h5><i class="fa-solid fa-graduation-cap"></i> Learn faster</h5>
+                <p class="card-text">Supercharge your studies with TalkNotes! Convert lectures and study sessions into clear notes and flashcards.</p>
+            </div>
+        </div>
+        <div class="feedback-container">
+            <p class="feedback-text">“Absolutely love Talknotes. I have wrist pain so being able to dictate my writing not only saves me time but relieves my pain! Win win. Highly recommend!”</p>
+            <p class="feedback-author">- Mike Cardona, from Hidden Levers AI Newsletter</p>
+        </div>
+    </section>
+    <section class="pricing-section">
+        <h3 class="how-it-works-h3">Pricing</h3>
+        <h2 class="how-it-works-heading">Turn your ramblings into actionable notes</h2>
+        <p class="offer-text">Introductory Offer: <span class="highlight-text">up to 65% OFF</span></p>
+        <div class="deal-card-container">
+            <div class="deal-card">
+                <p class="duration">Monthly</p>
+                <p class="bill-duration">Billed monthly</p>
+                <p class="price">$19.97</p>
+                <p class="offer-price"><span class="highlight-price">$10.98</span>/month</p>
+                <p class="deals"><i class="fa-solid fa-check"></i> iOS and Android app</p>
+                <p class="deals"><i class="fa-solid fa-check"></i> Unlimited notes</p>
+                <p class="deals"><i class="fa-solid fa-check"></i> 20 minutes recording</p>
+                <p class="deals"><i class="fa-solid fa-check"></i> Upload files</p>
+                <p class="deals"><i class="fa-solid fa-check"></i> Custom styles</p>
+                <button class="get-monthly-btn"><i class="fa-solid fa-arrow-right"></i> Get Monthly</button>
+                <p class="btn-below-text"><i class="fa-solid fa-lock"></i> Secure payment with Stripe</p>
+            </div>
+            <div class="deal-card">
+                <p class="duration">Yearly</p>
+                <p class="bill-duration">$5.75/month billed annually</p>
+                <p class="price">$197</p>
+                <p class="offer-price"><span class="highlight-price">$68.95</span>/year</p>
+                <p class="deals"><i class="fa-solid fa-check"></i> iOS and Android app</p>
+                <p class="deals"><i class="fa-solid fa-check"></i> Unlimited notes</p>
+                <p class="deals"><i class="fa-solid fa-check"></i> 20 minutes recording</p>
+                <p class="deals"><i class="fa-solid fa-check"></i> Upload files</p>
+                <p class="deals"><i class="fa-solid fa-check"></i> Custom styles</p>
+                <button class="get-monthly-btn"><i class="fa-solid fa-arrow-right"></i> Get Yearly</button>
+                <p class="btn-below-text"><i class="fa-solid fa-lock"></i> Secure payment with Stripe</p>
+            </div>
+        </div>
+        <p class="users-rating2">Trusted by 10,000+ happy users <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+    </section>
+    <section class="faq-section">
+        <h2 class="faq-h2">F.A.Q.</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <span>Is there a mobile app?</span>
+                    <span class="arrow">⌄</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, Talknotes is available for both iOS and Android. You can download it from the App Store or Google Play Store.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <span>How accurate is the voice-to-text conversion?</span>
+                    <span class="arrow">⌄</span>
+                </div>
+                <div class="faq-answer">
+                    Our state-of-the-art AI technology ensures a high accuracy rate. However, it may vary depending on the clarity of the speech and background noise. You can always edit the text if needed!
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <span>Can I use TalkNotes in different languages?</span>
+                    <span class="arrow">⌄</span>
+                </div>
+                <div class="faq-answer">
+                    Yes! TalkNotes supports 50+ languages: Afrikaans, Arabic, Armenian, Azerbaijani, Belarusian, Bosnian, Bulgarian, Catalan, Chinese, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, Galician, German, Greek, Hebrew, Hindi, Hungarian, Icelandic, Indonesian, Italian, Japanese, Kannada, Kazakh, Korean, Latvian, Lithuanian, Macedonian, Malay, Marathi, Maori, Nepali, Norwegian, Persian, Polish, Portuguese, Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swahili, Swedish, Tagalog, Tamil, Thai, Turkish, Ukrainian, Urdu, Vietnamese, and Welsh.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <span>Can I upload my own audio files?</span>
+                    <span class="arrow">⌄</span>
+                </div>
+                <div class="faq-answer">
+                    Yes! TalkNotes + gives you the ability to upload your own audio files up to 20 minutes long (or 2 hours with Pro). Perfect if you need to transcript a phone or zoom call.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <span>Can I edit the text once it's converted?</span>
+                    <span class="arrow">⌄</span>
+                </div>
+                <div class="faq-answer">
+                    Absolutely! TalkNotes allows you to edit and organize both the content and the transcript. Tailor it to your needs & create content easily.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <span>Do I need an internet connection to use TalkNotes?</span>
+                    <span class="arrow">⌄</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, an internet connection is required to utilize the full range of features in TalkNotes.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <span>What about privacy?</span>
+                    <span class="arrow">⌄</span>
+                </div>
+                <div class="faq-answer">
+                    Glad you asked! All audio files are deleted after they are transcribed, and we don't train the AI using your notes. Your notes are 100% yours.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <span>How can I contact support if I have questions or need help?</span>
+                    <span class="arrow">⌄</span>
+                </div>
+                <div class="faq-answer">
+                    We're here to assist you! Feel free to reach out via live chat or email us at support@talknotes.io. . Your satisfaction is our priority!
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <span>How can I cancel my subscription?</span>
+                    <span class="arrow">⌄</span>
+                </div>
+                <div class="faq-answer">
+                    You can cancel at any time. There is a link called Manage my subscription in the settings tab which lets you change plans or cancel your plan. You will not be charged anymore after cancelling and you will have access to paid features for the reminder of your subscription period.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <span>How long is the discount valid when I subscribe?</span>
+                    <span class="arrow">⌄</span>
+                </div>
+                <div class="faq-answer">
+                    The introductory discount does not have an end date so you pay the discounted price until further notice. If we eventually change pricing, we will send advance notice.
+                </div>
+            </div>
+            <button class="get-monthly-btn"><i class="fa-solid fa-arrow-right"></i> Get Talknotes</button>
+        </div>
+        <div class="feedback-container">
+            <p class="feedback-text">“The quality of the transcriptions is fantastic and require virtually no rework. Compared to incomparably more expensive tools, the results are dimensions better.”</p>
+            <p class="feedback-author">- Thomas Mickeleit, from KommunikationNeuDenken</p>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-div">
+                <div class="footer-logo">
+                    <img src="audio-waves.png">
+                    <h1>TalkNotes</h1>
+                </div>  
+                <p class="footer-text">Turn your thoughts into actionable notes.</p>
+                <p class="footer-text">© 2024 - talknotes.io All rights reserved.</p>
+                <i class="fa-brands fa-square-facebook"></i> <i class="fa-brands fa-square-x-twitter"></i> <i class="fa-brands fa-square-youtube"></i> <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="footer-div">
+                <p class="footer-highlight">USE CASES</p>
+                <p>Brainstorming</p>
+                <p class="footer-highlight">LINKS</p>
+                <p>Reviews</p>
+                <p>Pricing</p>
+                <p>Download</p>
+                <p>F.A.Q.</p>
+                <p>Blog</p>
+            </div>
+            <div class="footer-div">
+                <p class="footer-highlight">LEARN</p>
+                <p>Brainstorming AI</p>
+                <p class="footer-highlight">FREE TOOLS</p>
+                <p>Voice memo transcription</p>
+                <p>MP3 to text converter</p>
+            </div>
+            <div class="footer-div">
+                <p class="footer-highlight">CONTACTS</p>
+                <p>support@talknotes.io</p>
+                <p>Kansakoulukuja 3,
+                    FI-00100, HELSINKI, FINLAND,
+                    +1 737 320 3335</p>
+                <p class="footer-highlight">LEGAL</p>
+                <p>Privacy Policy</p>
+                <p>Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+    <script src="LandingPage.js"></script>    
+</body>
+</html>
