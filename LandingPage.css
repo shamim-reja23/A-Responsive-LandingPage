@@ -1,0 +1,635 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(240, 252, 255);
+}
+
+header{
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 5;
+    box-shadow: 0px 2px 4px rgba(0, 0 ,0, 0.2);
+}
+
+h1{
+    margin-left: 4px;
+    font-size: 27px;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    height: 50px;
+    margin-top: 7px;
+    margin-left: 35px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu ul{
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+
+.nav-menu ul li a{
+    font-size: 17px;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.nav-menu ul li a:hover{
+    color: blue;
+}
+
+.login-btn{
+    padding: 10px 15px;
+    background-color: rgb(238, 242, 255);
+    border: none;
+    border-radius: 5px;
+    color: rgb(67, 56, 202);
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover{
+    background-color: rgb(210, 220, 252);
+}
+
+.get-talknotes-plus-btn{
+    padding: 10px 15px;
+    background-color: rgb(67, 56, 202);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    margin-right: 35px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.get-talknotes-plus-btn:hover{
+    background-color: rgb(47, 34, 191);
+}
+
+
+
+.product-of-the-day-container img{
+    width: 120px;
+    margin-top: 170px;
+    margin-left: 380px;
+}
+
+h2{
+    font-size: 40px;
+    margin-left: 200px;
+}
+
+.highlight{
+    color: rgb(19, 19, 236);
+}
+h3{
+    margin-left: 200px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #ff006f; 
+}
+
+p{
+    margin-left: 200px;
+    color: gray;
+}
+
+.get-talknotes-btn{
+    padding: 15px 169px;
+    background-image: linear-gradient(to right, #ff006f, #a000ff);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 19px;
+    margin-left: 199px;
+    cursor: pointer;
+    transition: background-image 0.5s ease;
+    font-weight: bold;
+}
+
+.get-talknotes-btn:hover{
+    background-image: linear-gradient(to left, #ff006f, #a000ff);
+}
+
+.users-rating{
+    margin-left: 270px;
+}
+
+.users-rating i{
+    color: orange;
+}
+
+.main-container{
+    display: flex;
+    padding-bottom: 120px;
+}
+
+.demo-recording{
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    margin-top: 140px;
+    margin-left: 150px;
+    background-color: white;
+    box-shadow: 2px 3px 5px rgba(0, 0 ,0, 0.3);
+}
+
+.waveform{
+    background-color: rgb(238, 242, 255);
+    width: 250px;
+    height: 100px;
+    margin-left: 75px;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.styled-hr{
+    position: relative;
+    top: 47px;
+    border: 0;
+    height: 3px;
+    background-color: blue;
+    width: 100%;
+}
+
+.limit{
+    margin-left: 170px;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+.timer{
+    margin-left: 150px;
+    font-size: 40px;
+    margin-top: 10px;
+    color: black;
+}
+
+.img-container{
+    display: flex;
+}
+.play-img img{
+    width: 50px;
+    height: auto;
+    margin-left: 65px;
+    cursor: pointer;
+}
+
+.recording-image img{
+    width: 100px; 
+    height: auto;
+    margin-left: 30px;
+    margin-top: -30px;
+    cursor: pointer;
+}
+
+.recording-image {
+    transition: transform 0.3s ease;
+    animation: heartbeat 1.5s infinite ease-in-out;
+  }
+
+  /* Heartbeat animation */
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1); /* Slightly enlarge the image */
+      opacity: 0.7;          /* Slightly reduce the opacity */
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+.bin-img img{
+    width: 50px;
+    height: auto;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.continue-btn{
+    padding: 10px 35px;
+    background-color: rgba(133, 2, 247, 0.948);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    margin-left: 117px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.continue-btn:hover{
+    background-color: #7a0abb;
+}
+
+.demo-text{
+    font-size: 14px;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+.arrow-down{
+    margin-left: 700px;
+    padding-bottom: 100px;
+}
+
+.arrow-down i{
+    font-size: 70px;
+    color: gray;
+}
+
+.arrow-down{
+    transition: transform 0.3s ease;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+}
+
+.how-it-works-section{
+    background-color: rgb(225, 238, 250);
+    padding-top: 50px;
+}
+
+.how-it-works-h3{
+    color: gray;
+    margin-left: 650px;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+
+.how-it-works-heading{
+    font-size: 30px;
+    margin-left: 400px;
+}
+
+.how-it-works{
+    margin-left: 150px;
+    width: 500px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.step {
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+}
+
+.step-heading {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.step-title.active{
+    color: blue;
+}
+
+.step-text {
+    display: none;
+    padding: 20px 0;
+    color: gray;
+    font-size: 17px;
+
+}
+.plus-icon {
+    cursor: pointer; 
+    font-weight: bold;
+}
+
+.get-talknotes-btn1{
+    padding: 12px 160px;
+    background-image: linear-gradient(to right, #ff006f, #a000ff);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 19px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.how-it-works-container{
+    display: flex;
+}
+
+.video-container video{
+    width: 550px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.video-container{
+    border-radius: 15px;
+    padding: 100px 30px 80px 70px;
+}
+
+.feedback-container{
+    width: 700px;
+    height: 150px;
+    margin-left: 300px;
+    padding-bottom: 100px;
+}
+
+.feedback-text{
+    color: black;
+    font-size: 19px;
+    font-style: italic;
+    padding-top: 50px;
+}
+
+.feedback-author{
+    color: rgb(89, 88, 88);
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 100px;
+    padding-bottom: 100px;
+}
+
+.card{
+    width: calc(31% - 35px);
+    height: 150px;
+    margin: 18px;
+    box-sizing: border-box;
+    padding: 12px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+h5{
+    font-size: 19px;
+    margin: 5px 0;
+    padding: 0;
+    line-height: 2;
+}
+
+h5 i{
+    color: rgb(82, 33, 244);
+}
+
+.card-text{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-section{
+    background-color: rgb(225, 238, 250);
+    padding-top: 100px;
+}
+
+.offer-text{
+    margin-left: 570px;
+    font-weight: bold;
+}
+
+.highlight-text{
+    color: rgb(2, 220, 2);
+}
+
+.deal-card-container{
+    display: flex;
+    padding: 25px;
+    flex-wrap: wrap;
+    padding-left: 200px;
+}
+
+.deal-card{
+    width: 370px;
+    height: auto;
+    border-radius: 15px;
+    background-color: white;
+    margin: 18px;
+    margin-bottom: 0;
+    padding: 34px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.duration{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.bill-duration{
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.price{
+    font-size: 25px;
+    text-decoration: line-through;
+    margin: 0;
+}
+
+.offer-price{
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 23px;
+}
+
+.highlight-price{
+    font-size: 50px;
+    color: black;
+}
+
+.deals{
+    margin: 0;
+    padding-bottom: 17px;
+}
+
+.deals i{
+    color: rgb(5, 211, 5);
+}
+
+.get-monthly-btn{
+    width: 100%;
+    padding: 12px 100px;
+    background-image: linear-gradient(to right, #ff006f, #a000ff);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.btn-below-text{
+    margin: 0px 100px;
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+.btn-below-text i{
+    color: rgb(5, 211, 5);
+}
+
+.users-rating2{
+    margin-left: 500px;
+    padding-bottom: 80px;
+}
+
+.users-rating2 i{
+    color: orange;
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.faq-h2{
+    margin: 100px 600px;
+}
+
+.faq-item {
+    padding: 15px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px rgba(0, 0 ,0, 0.2);
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq-question.active {
+    color: blue; 
+}
+
+.faq-answer {
+    display: none;
+    padding-top: 15px;
+    font-size: 15px;
+    color: #555;
+}
+
+.arrow {
+    transition: transform 0.3s;
+}
+
+.arrow.down {
+    transform: rotate(180deg);
+}
+
+footer {
+    background-color: rgb(17, 24, 39);
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    height: 310px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-logo h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #bbb;
+    margin: 5px 0;
+    padding-bottom: 15px;
+}
+
+.footer-highlight {
+    color: white;
+    margin: 15px 0 10px;
+    font-size: 20px;
+}
+
+.footer-div{
+    padding: 20px;
+}
+.footer-div p {
+    margin: 5px 0;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer-div i {
+    font-size: 30px;
+    color: #bbb;
+    margin-right: 10px;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
